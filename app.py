@@ -11,6 +11,7 @@ def home():
 		with open('model1.pkl','rb') as f:
 			model=pickle.load(f)
 		ram=int(request.form['ram'])
+		ram=ram*1000
 		px_height=int(request.form['px_height'])
 		px_width=int(request.form['px_width'])
 		battery_power=int(request.form['battery_power'])
